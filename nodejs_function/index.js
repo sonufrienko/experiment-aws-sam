@@ -7,7 +7,7 @@ exports.handler = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      message: 'hello world from Node.js',
+      message: 'v2 hello world from Node.js function',
       location: ip.replace('\n', ''),
     }),
   };

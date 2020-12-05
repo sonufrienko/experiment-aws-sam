@@ -5,10 +5,10 @@
 ## Features
 
 - Local test
-- Deploy
-- CI/CD
-- Layers
+- Deployment types (All-at-once, Canary, Linear)
 - Polyglot (Python 3.8, Node.js 12)
+- CI/CD *(todo)*
+- Layers *(todo)*
 
 ## Commands
 
