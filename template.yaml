@@ -23,6 +23,18 @@ Resources:
           Properties:
             Path: /hello
             Method: get
+  NodejsFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: nodejs_function/
+      Handler: index.handler
+      Runtime: nodejs12.x
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /hello-node
+            Method: get
 
 Outputs:
   # ServerlessRestApi is an implicit API created out of Events key under Serverless::Function
