@@ -8,7 +8,7 @@
 - Deploy
 - CI/CD
 - Layers
-- Polyglot
+- Polyglot (Python 3.8, Node.js 12)
 
 ## Commands
 
@@ -17,13 +17,19 @@
   sam init
   ```
 - **Build**
+
+  build all functions
+
   ```bash
   sam build --use-container
   ```
+
   build specific function
+
   ```bash
   sam build --use-container HelloWorldFunction
   ```
+
 - **Run Lambda locally**
   ```bash
   sam local invoke HelloWorldFunction
