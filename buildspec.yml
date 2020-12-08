@@ -5,6 +5,9 @@ phases:
     runtime-versions:
       python: 3.8
       nodejs: 12
+    commands:
+      - python3 --version
+      - node -v
   build:
     commands:
       - sam build
