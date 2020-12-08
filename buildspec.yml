@@ -5,9 +5,6 @@ phases:
     runtime-versions:
       python: 3.8
       nodejs: 12
-    commands:
-      - python3 --version
-      - node -v
   build:
     commands:
       - sam build
@@ -17,4 +14,6 @@ phases:
 
 artifacts:
   files:
+    - .aws-sam/build/**
+    - .aws-sam/build/template.yaml
     - packaged-template.yml
