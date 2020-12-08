@@ -7,11 +7,12 @@ phases:
       nodejs: 12
   build:
     commands:
-      - sam build -u
+      - sam build
+      - ls .aws-sam/build/HelloWorldFunction
+      - ls .aws-sam/build/NodejsFunction
   post_build:
     commands:
-      # - sam package --template-file template.yaml --s3-bucket sonufrienko-deployments --output-template-file packaged-template.yml
-      - aws cloudformation package --template-file template.yaml --s3-bucket sonufrienko-deployments --output-template-file packaged-template.yml
+      - sam package --template-file template.yaml --s3-bucket sonufrienko-deployments --output-template-file packaged-template.yml
 
 artifacts:
   files:
